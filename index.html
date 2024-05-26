@@ -93,4 +93,17 @@
                     fingertips.
                 </p>
         </div>
+        <script>
+            window.watsonAssistantChatOptions = {
+              integrationID: "789873f3-72f6-446c-a4f7-bf0564b662f0", // The ID of this integration.
+              region: "us-south", // The region your integration is hosted in.
+              serviceInstanceID: "0355ce9a-9578-4b32-b4e4-74802d8b623a", // The ID of your service instance.
+              onLoad: async (instance) => { await instance.render(); }
+            };
+            setTimeout(function(){
+              const t=document.createElement('script');
+              t.src="https://web-chat.global.assistant.watson.appdomain.cloud/versions/" + (window.watsonAssistantChatOptions.clientVersion || 'latest') + "/WatsonAssistantChatEntry.js";
+              document.head.appendChild(t);
+            });
+          </script>
     </body>
