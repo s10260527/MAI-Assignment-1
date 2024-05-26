@@ -1,0 +1,96 @@
+<!Doctype html>
+<html lang = "en">
+    <head>
+        <!-- meta information here -->
+        <meta charset="utf-8">
+        <meta name="Author" content="Codi Chew">
+        <meta name="Description" content="MAI Assignment 1">
+        <meta name="Date created" content="Monday 6th May 2024">
+        <meta name="viewport" content="width=device-width, initial scale=1.0">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+        <link rel = "icon" href = "Images used/CondoPal.jpg">
+        <title>CondoPal</title>
+
+        <!-- Styling section -->
+        <style>
+            body {
+                margin: 0;
+                overflow-x: hidden; 
+                position: relative;
+            }
+
+            #Logo{
+                border-radius: 50%;
+                width: 70px;
+                height: 70px;
+                margin-left: 15px;
+                border: 2px solid black;
+            }
+            #LogoText{
+                margin-left: 7px;
+                margin-top: 0;
+            }
+
+            #AboutText {
+            text-align: left;
+            background-color: white;
+        }
+        /* Landign page logo */
+        #LPL {
+            display:block;
+            margin-left: auto;
+            margin-right: auto;
+            max-height: 90vh;
+            width: auto;
+            max-width: 100%;
+        }
+        /* Landing page logo for laptop size */
+        @media (max-width: 1440px) {
+            #LPL {
+                max-height: 80vh;
+            }
+        }
+
+        </style>
+    </head>
+    <body>
+        <nav id="navbar-example2" class="navbar bg-info px-3 mb-3 sticky-top">
+            <a class="navbar-brand" href="#">
+                <img id = "Logo" src="Images used/CondoPal.jpg">
+                <p id = LogoText>CondoPal</p>
+            </a>
+            <ul class="nav nav-pills">
+              <li class="nav-item">
+                <a class="nav-link text-dark" href="#scrollspyHeading1">About us</a>
+              </li>
+            <ul>
+        </nav>
+        <!-- Landing page logo -->
+        <img id = "LPL" src="Images used/CondoPal.jpg">
+        <div data-bs-spy="scroll" data-bs-target="#navbar-example2" data-bs-offset="40" data-bs-root-margin="0px 0px -40%" data-bs-smooth-scroll="true" class="scrollspy-example bg-body-tertiary p-3 rounded-2" tabindex="0">
+            <h4 id="scrollspyHeading1">About us</h4>
+                <p id = "AboutText">
+                    Welcome to CondoPal, your digital concierge designed to enhance your living experience at our
+                    condominium. At CondoPal, we understand that modern living is about convenience, connectivity,
+                    and community. That's why we've created a responsive and user-friendly platform that serves as 
+                    a bridge between you and our condominium management team.
+                    <br><br>
+                    CondoPal was developed with a singular vision: to simplify daily tasks and enrich the community
+                    experience for every resident. Whether you need to book amenities, stay updated with the latest
+                    events, or just make your day-to-day activities easier, CondoPal is here to assist.
+                    <br><br>
+                    Our system integrates seamlessly with the condominium’s facilities management, allowing you to 
+                    book amenities like the BBQ pits, function rooms, gym, and more with just a few clicks. It also
+                    keeps you informed of maintenance schedules and upcoming community events, ensuring that you 
+                    never miss out on important updates.
+                    <br><br>
+                    We are committed to fostering a vibrant community where all residents can enjoy a high quality 
+                    of life. CondoPal supports this commitment by offering a platform that not only simplifies 
+                    logistical tasks but also encourages greater interaction and engagement among residents.
+                    <br><br>
+                    Join us in embracing a smarter, more connected way of living. Discover the convenience of 
+                    CondoPal today, and see how easy it is to manage your home environment right from your 
+                    fingertips.
+                </p>
+        </div>
+    </body>
